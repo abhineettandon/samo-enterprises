@@ -1,7 +1,6 @@
 import { Link, Outlet, useLocation } from "react-router";
 
 const NAV_LINKS = [
-  { to: "/", label: "Home" },
   { to: "/granite", label: "Granite" },
   { to: "/marble", label: "Marble" },
   { to: "/tiles", label: "Tiles" },
@@ -15,12 +14,12 @@ export function Layout() {
       {/* Top bar */}
       <div className="border-b border-border">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-          <p className="text-xs tracking-widest uppercase text-muted-foreground" style={{ fontFamily: "'DM Mono', monospace" }}>
-            Est. 1998 · Premium Natural Stone
-          </p>
-          <p className="text-xs tracking-widest uppercase text-muted-foreground" style={{ fontFamily: "'DM Mono', monospace" }}>
-            +1 (800) 726 6000
-          </p>
+          <a href="mailto:contact@sampenterprises.com" className="text-xs tracking-widest uppercase text-muted-foreground" style={{ fontFamily: "'DM Mono', monospace" }}>
+            contact@samoenterprises.com
+          </a>
+          <a href="tel:+91 62399 40093" className="text-xs tracking-widest uppercase text-muted-foreground" style={{ fontFamily: "'DM Mono', monospace" }}>
+            +91 62399 40093
+          </a>
         </div>
       </div>
 
@@ -104,10 +103,12 @@ export function Layout() {
               Contact
             </p>
             <address className="text-sm text-foreground not-italic space-y-1">
-              <p>42 Stonecutter Lane</p>
-              <p>New York, NY 10013</p>
-              <p className="mt-3 text-muted-foreground">info@samoenterprises.com</p>
-              <p className="text-muted-foreground">+1 (800) 726 6000</p>
+              <p>SCO-35, Sagar Enclave</p>
+              <p>Transport Nagar, Jalandhar City, 144012</p>
+              <a href="mailto:contact@samoenterprises.com" className="mt-3 text-muted-foreground block">contact@samoenterprises.com</a>
+              <a href="mailto:samoenterprises@gmail.com" className="text-muted-foreground block">samoenterprisest@gmail.com</a>
+              <a href="tel:+91 62399 40093" className="mt-3 text-muted-foreground block">+91 62399 40093</a>
+              <a href="tel:+91 62399 50093" className="text-muted-foreground block">+91 62399 50093</a>
             </address>
           </div>
         </div>

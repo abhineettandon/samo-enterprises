@@ -216,7 +216,7 @@ export function CataloguePage({
             </p>
           </div>
           <a
-            href="mailto:samples@samoenterprises.com"
+            href="mailto:contact@samoenterprises.com"
             className="px-7 py-3 text-sm tracking-widest uppercase bg-primary text-primary-foreground border border-primary transition-all duration-200 hover:bg-accent hover:border-accent flex-shrink-0"
             style={{ fontFamily: "'Inter', sans-serif", letterSpacing: "0.14em" }}
           >

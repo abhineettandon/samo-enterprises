@@ -238,7 +238,7 @@ export function Home() {
           </div>
           <div className="flex gap-4 flex-shrink-0">
             <a
-              href="mailto:info@samoenterprises.com"
+              href="mailto:contact@samoenterprises.com"
               className="px-7 py-3 text-sm tracking-widest uppercase bg-primary text-primary-foreground border border-primary transition-all duration-200 hover:bg-accent hover:border-accent"
               style={{ fontFamily: "'Inter', sans-serif", letterSpacing: "0.14em" }}
             >
