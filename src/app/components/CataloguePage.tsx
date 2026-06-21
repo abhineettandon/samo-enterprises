@@ -3,13 +3,9 @@ import { useState } from "react";
 export type StoneItem = {
   id: string;
   name: string;
-  origin: string;
   finish: string[];
-  use: string;
-  description: string;
+  thickness: string,
   image: string;
-  alt: string;
-  featured?: boolean;
 };
 
 type CataloguePageProps = {
@@ -18,7 +14,6 @@ type CataloguePageProps = {
   description: string;
   heroImage: string;
   heroAlt: string;
-  finishFilters: string[];
   items: StoneItem[];
 };
 
@@ -28,21 +23,8 @@ export function CataloguePage({
   description,
   heroImage,
   heroAlt,
-  finishFilters,
   items,
-}: CataloguePageProps) {
-  const [activeFinish, setActiveFinish] = useState("All");
-  const [searchQuery, setSearchQuery] = useState("");
-
-  const filtered = items.filter(item => {
-    const matchesFinish = activeFinish === "All" || item.finish.includes(activeFinish);
-    const matchesSearch =
-      searchQuery === "" ||
-      item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.origin.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesFinish && matchesSearch;
-  });
-
+}: Readonly<CataloguePageProps>) {
   return (
     <div>
       {/* Hero */}
@@ -94,111 +76,59 @@ export function CataloguePage({
         </div>
       </section>
 
-      {/* Filters + Search */}
-      <section className="border-b border-border sticky top-[89px] z-30 bg-background">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
-          <div className="flex items-center gap-2 flex-wrap">
-            <span
-              className="text-xs tracking-widest uppercase text-muted-foreground mr-2"
-              style={{ fontFamily: "'DM Mono', monospace" }}
-            >
-              Finish
-            </span>
-            {["All", ...finishFilters].map(finish => (
-              <button
-                key={finish}
-                onClick={() => setActiveFinish(finish)}
-                className={`px-4 py-1.5 text-xs tracking-wider uppercase border transition-all duration-150 ${
-                  activeFinish === finish
-                    ? "bg-primary text-primary-foreground border-primary"
-                    : "border-border text-muted-foreground hover:border-foreground hover:text-foreground"
-                }`}
-                style={{ fontFamily: "'Inter', sans-serif", letterSpacing: "0.1em" }}
-              >
-                {finish}
-              </button>
-            ))}
-          </div>
-          <input
-            type="text"
-            placeholder="Search by name or origin…"
-            value={searchQuery}
-            onChange={e => setSearchQuery(e.target.value)}
-            className="text-sm border border-border bg-transparent px-4 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent transition-colors"
-            style={{ fontFamily: "'Inter', sans-serif", minWidth: 220 }}
-          />
-        </div>
-      </section>
-
       {/* Grid */}
       <section className="max-w-7xl mx-auto px-6 py-12">
-        {filtered.length === 0 ? (
-          <div className="py-24 text-center">
-            <p className="text-muted-foreground text-sm">No stones match your filters.</p>
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {filtered.map(item => (
-              <article
-                key={item.id}
-                className="group overflow-hidden border border-border transition-shadow duration-300 hover:shadow-lg"
-                style={{ background: "var(--card)" }}
-              >
-                <div className="overflow-hidden" style={{ height: 220 }}>
-                  <img
-                    src={item.image}
-                    alt={item.alt}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {items.map(item => (
+            <article
+              key={item.id}
+              className="group overflow-hidden border border-border transition-shadow duration-300 hover:shadow-lg"
+              style={{ background: "var(--card)" }}
+            >
+              <div className="overflow-hidden" style={{ height: 220 }}>
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-4">
+                <div className="flex items-start justify-between mb-1">
+                  <h3
+                    className="text-base text-foreground leading-snug"
+                    style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500 }}
+                  >
+                    {item.name}
+                  </h3>
                 </div>
-                <div className="p-4">
-                  <div className="flex items-start justify-between mb-1">
-                    <h3
-                      className="text-base text-foreground leading-snug"
-                      style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500 }}
+                <p className="text-xs text-muted-foreground leading-relaxed mb-4">{item.thickness}</p>
+                <div className="flex flex-wrap gap-1.5 mb-4">
+                  {item.finish.map(f => (
+                    <span
+                      key={f}
+                      className="text-xs px-2 py-0.5 border border-border text-muted-foreground"
+                      style={{ fontFamily: "'DM Mono', monospace" }}
                     >
-                      {item.name}
-                    </h3>
-                    {item.featured && (
-                      <span
-                        className="text-xs text-accent ml-2 flex-shrink-0 mt-0.5"
-                        style={{ fontFamily: "'DM Mono', monospace" }}
-                      >
-                        ★
-                      </span>
-                    )}
-                  </div>
-                  <p className="text-xs text-muted-foreground mb-3" style={{ fontFamily: "'DM Mono', monospace" }}>
-                    {item.origin}
-                  </p>
-                  <p className="text-xs text-muted-foreground leading-relaxed mb-4">{item.description}</p>
-                  <div className="flex flex-wrap gap-1.5 mb-4">
-                    {item.finish.map(f => (
-                      <span
-                        key={f}
-                        className="text-xs px-2 py-0.5 border border-border text-muted-foreground"
-                        style={{ fontFamily: "'DM Mono', monospace" }}
-                      >
-                        {f}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="border-t border-border pt-3 flex items-center justify-between">
-                    <span className="text-xs text-muted-foreground uppercase tracking-wider" style={{ fontFamily: "'DM Mono', monospace" }}>
-                      {item.use}
+                      {f}
                     </span>
-                    <button
-                      className="text-xs text-accent hover:text-foreground transition-colors"
-                      style={{ fontFamily: "'Inter', sans-serif" }}
-                    >
-                      Enquire →
-                    </button>
-                  </div>
+                  ))}
                 </div>
-              </article>
-            ))}
-          </div>
-        )}
+                <div className="border-t border-border pt-3 flex items-center justify-between">
+                  <span className="text-xs text-muted-foreground uppercase tracking-wider" style={{ fontFamily: "'DM Mono', monospace" }}>
+                    {item.id}
+                  </span>
+                  <a
+                    href={`mailto:contact@samoenterprises.com?subject=New Enquiry | ${category}`}
+                    className="text-xs text-accent hover:text-foreground transition-colors"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    Enquire →
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
       </section>
 
       {/* Sample request CTA */}
@@ -216,7 +146,7 @@ export function CataloguePage({
             </p>
           </div>
           <a
-            href="mailto:contact@samoenterprises.com"
+            href="mailto:contact@samoenterprises.com?subject=Request Samples"
             className="px-7 py-3 text-sm tracking-widest uppercase bg-primary text-primary-foreground border border-primary transition-all duration-200 hover:bg-accent hover:border-accent flex-shrink-0"
             style={{ fontFamily: "'Inter', sans-serif", letterSpacing: "0.14em" }}
           >

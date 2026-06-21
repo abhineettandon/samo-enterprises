@@ -2,130 +2,118 @@ import { CataloguePage, StoneItem } from "./CataloguePage";
 
 const TILES_ITEMS: StoneItem[] = [
   {
-    id: "t1",
-    name: "Subway Classic White",
-    origin: "Ceramic · Italy",
-    finish: ["Gloss", "Matte"],
-    use: "Kitchen Walls · Bathrooms",
-    description: "Timeless 75×150mm white ceramic subway — clean, durable, and endlessly adaptable.",
-    image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=600&h=500&fit=crop&auto=format&q=80",
-    alt: "White subway tiles",
-    featured: true,
+    id: "sm-t1",
+    name: "Calcata Gold",
+    finish: ["Polish"],
+    image: "/img/sm-t1.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
   },
   {
-    id: "t2",
-    name: "Moroccan Zellige",
-    origin: "Handmade · Morocco",
-    finish: ["Gloss"],
-    use: "Feature Walls · Splashbacks",
-    description: "Hand-formed terracotta with unpredictable glaze variation — no two tiles identical.",
-    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=500&fit=crop&auto=format&q=80",
-    alt: "Moroccan Zellige tile pattern",
-    featured: true,
+    id: "sm-t2",
+    name: "Calcata Gold Black",
+    finish: ["Polish"],
+    image: "/img/sm-t2.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
   },
   {
-    id: "t3",
-    name: "Herringbone Ivory",
-    origin: "Porcelain · Spain",
-    finish: ["Matte", "Gloss"],
-    use: "Floors · Feature Walls",
-    description: "Warm ivory porcelain in classic herringbone format — subtle texture, understated luxury.",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=500&fit=crop&auto=format&q=80",
-    alt: "Ivory herringbone tiles",
+    id: "sm-t3",
+    name: "Slate Grey",
+    finish: ["Polish"],
+    image: "/img/sm-t3.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
   },
   {
-    id: "t4",
-    name: "Hex Black Matte",
-    origin: "Porcelain · Portugal",
-    finish: ["Matte"],
-    use: "Bathrooms · Feature Floors",
-    description: "Graphite-black hexagonal porcelain with a smooth matte finish — bold geometry.",
-    image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&h=500&fit=crop&auto=format&q=80",
-    alt: "Black hexagonal matte tiles",
+    id: "sm-t4",
+    name: "Bitcoin Beige",
+    finish: ["Polish"],
+    image: "/img/sm-t4.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
   },
   {
-    id: "t5",
-    name: "Terracotta Square",
-    origin: "Handmade · France",
-    finish: ["Natural", "Sealed"],
-    use: "Floors · Courtyards",
-    description: "Earthy hand-pressed terracotta squares — warm, imperfect, deeply characterful.",
-    image: "https://images.unsplash.com/photo-1586105251261-72a756497a11?w=600&h=500&fit=crop&auto=format&q=80",
-    alt: "Terracotta floor tiles",
-    featured: true,
+    id: "sm-t5",
+    name: "Calcata Resin",
+    finish: ["Polish"],
+    image: "/img/sm-t5.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
   },
   {
-    id: "t6",
-    name: "Slate Grey Large Format",
-    origin: "Porcelain · Italy",
-    finish: ["Matte", "Structured"],
-    use: "Flooring · Feature Walls",
-    description: "900×900mm anthracite porcelain with a riven slate texture — modern and minimal.",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=500&fit=crop&auto=format&q=80",
-    alt: "Slate grey large format porcelain tiles",
+    id: "sm-t6",
+    name: "Lithico Cream",
+    finish: ["Polish"],
+    image: "/img/sm-t6.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
   },
   {
-    id: "t7",
-    name: "Travertine Look",
-    origin: "Porcelain · Spain",
-    finish: ["Matte", "Polished"],
-    use: "Flooring · Outdoor",
-    description: "Convincing travertine texture in fade-resistant, frost-proof porcelain.",
-    image: "https://images.unsplash.com/photo-1564540586988-aa4e53c3d799?w=600&h=500&fit=crop&auto=format&q=80",
-    alt: "Travertine look porcelain tile",
+    id: "sm-t7",
+    name: "Golden Dune",
+    finish: ["Polish"],
+    image: "/img/sm-t7.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
   },
   {
-    id: "t8",
-    name: "Wood-Look Plank",
-    origin: "Porcelain · Italy",
-    finish: ["Structured"],
-    use: "Flooring · Outdoor Decking",
-    description: "Long-format oak-grain porcelain — the warmth of timber with tile durability.",
-    image: "https://images.unsplash.com/photo-1574739782594-db4ead022697?w=600&h=500&fit=crop&auto=format&q=80",
-    alt: "Wood-look porcelain plank",
+    id: "sm-t8",
+    name: "Black Forest",
+    finish: ["Polish"],
+    image: "/img/sm-t8.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
   },
   {
-    id: "t9",
-    name: "Encaustic Cement",
-    origin: "Handmade · Colombia",
-    finish: ["Matte", "Sealed"],
-    use: "Feature Floors · Walls",
-    description: "Traditional pigmented cement tiles in geometric patterns — artisan-crafted.",
-    image: "https://images.unsplash.com/photo-1604177091072-04ba1e2de54e?w=600&h=500&fit=crop&auto=format&q=80",
-    alt: "Encaustic cement patterned tiles",
-    featured: true,
+    id: "sm-t9",
+    name: "Shimmer Gold",
+    finish: ["Polish"],
+    image: "/img/sm-t9.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
   },
   {
-    id: "t10",
-    name: "Penny Round Blanc",
-    origin: "Ceramic · Italy",
-    finish: ["Gloss", "Matte"],
-    use: "Bathroom Floors · Walls",
-    description: "Classic small-format penny rounds in crisp white — refined and textural.",
-    image: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=600&h=500&fit=crop&auto=format&q=80",
-    alt: "White penny round mosaic tiles",
+    id: "sm-t10",
+    name: "Shimmer Black Gold",
+    finish: ["Polish"],
+    image: "/img/sm-t10.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
   },
   {
-    id: "t11",
-    name: "Calacatta Porcelain",
-    origin: "Porcelain · Spain",
-    finish: ["Polished", "Matte"],
-    use: "Countertops · Walls · Floors",
-    description: "Full-body Calacatta marble replica in large-format porcelain — virtually seamless.",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=500&fit=crop&auto=format&q=80",
-    alt: "Calacatta look porcelain tile",
+    id: "sm-t11",
+    name: "Hazelnut",
+    finish: ["Polish"],
+    image: "/img/sm-t11.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
   },
   {
-    id: "t12",
-    name: "Charcoal Brick",
-    origin: "Ceramic · Portugal",
-    finish: ["Matte", "Structured"],
-    use: "Feature Walls · Fireplaces",
-    description: "Smoky charcoal ceramic brick format — industrial warmth and textural depth.",
-    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?w=600&h=500&fit=crop&auto=format&q=80",
-    alt: "Charcoal brick ceramic tiles",
+    id: "sm-t12",
+    name: "Golden Drug",
+    finish: ["Polish"],
+    image: "/img/sm-t12.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
   },
-];
+  {
+    id: "sm-t13",
+    name: "Carrera Gold",
+    finish: ["Polish"],
+    image: "/img/sm-t13.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
+  },
+  {
+    id: "sm-t14",
+    name: "Zed Black",
+    finish: ["Polish"],
+    image: "/img/sm-t14.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
+  },
+  {
+    id: "sm-t15",
+    name: "Golden Grey Dune",
+    finish: ["Polish"],
+    image: "/img/sm-t15.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
+  },
+  {
+    id: "sm-t16",
+    name: "Wooden Touch",
+    finish: ["Polish"],
+    image: "/img/sm-t16.png",
+    thickness: '2x2 (ft), 2x4 (ft), 32 x 64 (inches)'
+  },
+]
 
 export function TilesPage() {
   return (
@@ -135,7 +123,6 @@ export function TilesPage() {
       description="Our tile collection ranges from traditional Moroccan zellige and encaustic cement tiles to contemporary large-format porcelain and wood-look planks. We carry ceramic, porcelain, and natural stone tile formats suitable for floors, walls, splashbacks, and exterior applications."
       heroImage="https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=1600&h=600&fit=crop&auto=format&q=70"
       heroAlt="Geometric tile pattern arrangement"
-      finishFilters={["Polished", "Matte", "Gloss", "Structured", "Natural", "Sealed"]}
       items={TILES_ITEMS}
     />
   );

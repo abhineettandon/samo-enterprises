@@ -25,20 +25,9 @@ export function Layout() {
 
       {/* Nav */}
       <header className="border-b border-border sticky top-0 z-40 bg-background">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
           <Link to="/" className="flex flex-col leading-none group">
-            <span
-              className="text-2xl tracking-tight text-foreground"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 600 }}
-            >
-              SAMO
-            </span>
-            <span
-              className="text-xs tracking-[0.22em] uppercase text-muted-foreground mt-0.5"
-              style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
-            >
-              Enterprises
-            </span>
+            <img src="/img/logo.png" alt="samo-enterprises" className="object-cover w-24 h-24" />
           </Link>
 
           <nav className="flex items-center gap-8">
@@ -70,15 +59,10 @@ export function Layout() {
       {/* Footer */}
       <footer className="border-t border-border mt-20">
         <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
-          <div>
-            <p
-              className="text-xl text-foreground mb-2"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
-            >
-              SAMO Enterprises
-            </p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Supplying premium natural stone to architects, designers, and homeowners since 1998.
+          <div className="flex flex-col items-center justify-center text-center">
+            <img src="/img/logo.png" alt="samo-enterprises" className="object-cover w-28 h-28" />
+            <p className="text-sm text-muted-foreground leading-relaxed mt-4">
+              Supplying premium natural stone to architects, designers, and homeowners since 2005.
             </p>
           </div>
           <div>

@@ -9,7 +9,7 @@ const CATEGORIES = [
       "Quarried from the earth's depths, our granites offer unmatched durability and a spectrum of dramatic natural patterns. Ideal for countertops, flooring, and exterior cladding.",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&h=1100&fit=crop&auto=format&q=80",
     alt: "Dark speckled granite stone surface",
-    count: 24,
+    count: 20,
   },
   {
     to: "/marble",
@@ -19,7 +19,7 @@ const CATEGORIES = [
       "From the quarries of Carrara to the hills of Turkey, our marble collection brings classical grandeur to kitchens, bathrooms, and landmark interiors.",
     image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=900&h=1100&fit=crop&auto=format&q=80",
     alt: "Luxurious white marble with veining",
-    count: 18,
+    count: 12,
   },
   {
     to: "/tiles",
@@ -29,7 +29,7 @@ const CATEGORIES = [
       "A curated selection of ceramic, porcelain, and natural stone tiles spanning heritage patterns to contemporary large-format designs for walls and floors.",
     image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=900&h=1100&fit=crop&auto=format&q=80",
     alt: "Geometric pattern tile arrangement",
-    count: 36,
+    count: 16,
   },
 ];
 
@@ -52,7 +52,7 @@ export function Home() {
             className="text-xs tracking-widest uppercase mb-6"
             style={{ fontFamily: "'DM Mono', monospace", color: "#8B6914" }}
           >
-            Natural Stone · Since 1998
+            Natural Stone · Since 2005
           </p>
           <h1
             className="text-5xl md:text-7xl leading-tight mb-8 max-w-3xl"
@@ -96,7 +96,7 @@ export function Home() {
             { label: "Stone varieties", value: "78+" },
             { label: "Countries sourced", value: "14" },
             { label: "Projects completed", value: "3,200+" },
-            { label: "Years of expertise", value: "28" },
+            { label: "Years of expertise", value: "21" },
           ].map(stat => (
             <div key={stat.label} className="flex flex-col">
               <span
