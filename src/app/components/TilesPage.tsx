@@ -121,7 +121,7 @@ export function TilesPage() {
       category="Tiles"
       tagline="From artisan handmade to precision-engineered large format — tiles for every surface and every vision."
       description="Our tile collection ranges from traditional Moroccan zellige and encaustic cement tiles to contemporary large-format porcelain and wood-look planks. We carry ceramic, porcelain, and natural stone tile formats suitable for floors, walls, splashbacks, and exterior applications."
-      heroImage="https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=1600&h=600&fit=crop&auto=format&q=70"
+      heroImage="/img/tiles.jpeg"
       heroAlt="Geometric tile pattern arrangement"
       items={TILES_ITEMS}
     />

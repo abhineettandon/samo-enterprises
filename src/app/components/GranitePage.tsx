@@ -149,7 +149,7 @@ export function GranitePage() {
       category="Granite"
       tagline="Forged deep within the earth — granite offers unrivalled durability and an endlessly varied palette."
       description="Our granite collection spans four continents, from the dramatic black galaxies of India to the iridescent blues of Norway. Each variety is selected for visual character, structural integrity, and finish quality. Available in polished, honed, leathered, flamed, and bush-hammered surfaces."
-      heroImage="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&h=600&fit=crop&auto=format&q=70"
+      heroImage="/img/granite.jpeg"
       heroAlt="Close-up of Black Galaxy granite surface"
       items={GRANITE_ITEMS}
     />

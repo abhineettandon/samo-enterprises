@@ -7,7 +7,7 @@ const CATEGORIES = [
     tagline: "Enduring strength, timeless beauty",
     description:
       "Quarried from the earth's depths, our granites offer unmatched durability and a spectrum of dramatic natural patterns. Ideal for countertops, flooring, and exterior cladding.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&h=1100&fit=crop&auto=format&q=80",
+    image: "/img/granite.jpeg",
     alt: "Dark speckled granite stone surface",
     count: 20,
   },
@@ -17,7 +17,7 @@ const CATEGORIES = [
     tagline: "Refined elegance, sculpted by time",
     description:
       "From the quarries of Carrara to the hills of Turkey, our marble collection brings classical grandeur to kitchens, bathrooms, and landmark interiors.",
-    image: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=900&h=1100&fit=crop&auto=format&q=80",
+    image: "/img/marble.jpg",
     alt: "Luxurious white marble with veining",
     count: 12,
   },
@@ -27,7 +27,7 @@ const CATEGORIES = [
     tagline: "Versatile surfaces, infinite character",
     description:
       "A curated selection of ceramic, porcelain, and natural stone tiles spanning heritage patterns to contemporary large-format designs for walls and floors.",
-    image: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?w=900&h=1100&fit=crop&auto=format&q=80",
+    image: "/img/tiles.jpeg",
     alt: "Geometric pattern tile arrangement",
     count: 16,
   },

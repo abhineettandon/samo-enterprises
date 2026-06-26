@@ -93,7 +93,7 @@ export function MarblePage() {
       category="Marble"
       tagline="Sculpted by metamorphism over millennia — marble carries an inherent elegance no other material can replicate."
       description="From the storied quarries of Carrara and the Basque country to the islands of Greece and the hills of Morocco, our marble collection represents the finest veined and toned varieties available. Each slab is selected for colour consistency, vein character, and surface quality."
-      heroImage="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=1600&h=600&fit=crop&auto=format&q=70"
+      heroImage="/img/marble.jpg"
       heroAlt="Carrara white marble surface close-up"
       items={MARBLE_ITEMS}
     />
