@@ -90,7 +90,7 @@ export function Layout() {
               <p>SCO-35, Sagar Enclave</p>
               <p>Transport Nagar, Jalandhar City, 144012</p>
               <a href="mailto:contact@samoenterprises.com" className="mt-3 text-muted-foreground block">contact@samoenterprises.com</a>
-              <a href="mailto:samoenterprises@gmail.com" className="text-muted-foreground block">samoenterprisest@gmail.com</a>
+              <a href="mailto:samoenterprises3@gmail.com" className="text-muted-foreground block">samoenterprises3@gmail.com</a>
               <a href="tel:+91 62399 40093" className="mt-3 text-muted-foreground block">+91 62399 40093</a>
               <a href="tel:+91 62399 50093" className="text-muted-foreground block">+91 62399 50093</a>
             </address>
@@ -99,7 +99,7 @@ export function Layout() {
         <div className="border-t border-border">
           <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <p className="text-xs text-muted-foreground" style={{ fontFamily: "'DM Mono', monospace" }}>
-              © 2026 SAMO Enterprises. All rights reserved.
+              © 2015 SAMO Enterprises. All rights reserved.
             </p>
           </div>
         </div>

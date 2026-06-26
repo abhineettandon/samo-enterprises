@@ -52,7 +52,7 @@ export function Home() {
             className="text-xs tracking-widest uppercase mb-6"
             style={{ fontFamily: "'DM Mono', monospace", color: "#8B6914" }}
           >
-            Natural Stone · Since 2005
+            Natural Stone · Since 2015
           </p>
           <h1
             className="text-5xl md:text-7xl leading-tight mb-8 max-w-3xl"
