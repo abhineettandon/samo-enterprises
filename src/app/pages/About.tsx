@@ -4,7 +4,7 @@ import { Stats } from "../components/Stats";
 export function AboutPage() {
   const team = [
     {
-      name: "Samuel Okonkwo",
+      name: "Sahil Sehdev",
       role: "Founder & Production Manager",
       bio: "USA since 2015",
       image: "/img/sahil.png",
