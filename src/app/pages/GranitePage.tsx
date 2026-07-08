@@ -1,4 +1,4 @@
-import { CataloguePage, StoneItem } from "./CataloguePage";
+import { Catalogue, StoneItem } from "../components/Catalogue";
 
 const GRANITE_ITEMS: StoneItem[] = [
   {
@@ -145,7 +145,7 @@ const GRANITE_ITEMS: StoneItem[] = [
 
 export function GranitePage() {
   return (
-    <CataloguePage
+    <Catalogue
       category="Granite"
       tagline="Forged deep within the earth — granite offers unrivalled durability and an endlessly varied palette."
       description="Our granite collection spans four continents, from the dramatic black galaxies of India to the iridescent blues of Norway. Each variety is selected for visual character, structural integrity, and finish quality. Available in polished, honed, leathered, flamed, and bush-hammered surfaces."
