@@ -1,4 +1,4 @@
-import { CataloguePage, StoneItem } from "./CataloguePage";
+import { Catalogue, StoneItem } from "../components/Catalogue";
 
 const MARBLE_ITEMS: StoneItem[] = [
   {
@@ -89,7 +89,7 @@ const MARBLE_ITEMS: StoneItem[] = [
 
 export function MarblePage() {
   return (
-    <CataloguePage
+    <Catalogue
       category="Marble"
       tagline="Sculpted by metamorphism over millennia — marble carries an inherent elegance no other material can replicate."
       description="From the storied quarries of Carrara and the Basque country to the islands of Greece and the hills of Morocco, our marble collection represents the finest veined and toned varieties available. Each slab is selected for colour consistency, vein character, and surface quality."

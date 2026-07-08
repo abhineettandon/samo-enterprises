@@ -1,4 +1,4 @@
-import { CataloguePage, StoneItem } from "./CataloguePage";
+import { Catalogue, StoneItem } from "../components/Catalogue";
 
 const TILES_ITEMS: StoneItem[] = [
   {
@@ -117,7 +117,7 @@ const TILES_ITEMS: StoneItem[] = [
 
 export function TilesPage() {
   return (
-    <CataloguePage
+    <Catalogue
       category="Tiles"
       tagline="From artisan handmade to precision-engineered large format — tiles for every surface and every vision."
       description="Our tile collection ranges from traditional Moroccan zellige and encaustic cement tiles to contemporary large-format porcelain and wood-look planks. We carry ceramic, porcelain, and natural stone tile formats suitable for floors, walls, splashbacks, and exterior applications."
