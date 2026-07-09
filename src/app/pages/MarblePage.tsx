@@ -12,77 +12,77 @@ const MARBLE_ITEMS: StoneItem[] = [
     id: "sm-126",
     name: "Fantasy Brown",
     finish: ["Polish", "Matte", "Leather"],
-    image: "/img/sm-126.png",
+    image: "/img/sm-126.jpg",
     thickness: '2cm, 3cm, 4cm'
   },
   {
     id: "sm-127",
     name: "Ivory Fantasy",
     finish: ["Polish", "Matte", "Leather"],
-    image: "/img/sm-127.png",
+    image: "/img/sm-127.jpg",
     thickness: '2cm, 3cm, 4cm'
   },
   {
     id: "sm-133",
     name: "Golden Storm",
     finish: ["Polish", "Matte", "Leather"],
-    image: "/img/sm-133.png",
+    image: "/img/sm-133.jpg",
     thickness: '2cm, 3cm, 4cm'
   },
   {
     id: "sm-137",
     name: "River White",
     finish: ["Polish", "Matte", "Leather"],
-    image: "/img/sm-137.png",
+    image: "/img/sm-137.jpg",
     thickness: '2cm, 3cm, 4cm'
   },
   {
     id: "sm-138",
     name: "New Viscount White",
     finish: ["Polish", "Matte", "Leather"],
-    image: "/img/sm-138.png",
+    image: "/img/sm-138.jpg",
     thickness: '2cm, 3cm, 4cm'
   },
   {
     id: "sm-139",
     name: "Picaso White",
     finish: ["Polish", "Matte", "Leather"],
-    image: "/img/sm-139.png",
+    image: "/img/sm-139.jpg",
     thickness: '2cm, 3cm, 4cm'
   },
   {
     id: "sm-142",
     name: "Ocean Blue",
     finish: ["Polish", "Matte", "Leather"],
-    image: "/img/sm-142.png",
+    image: "/img/sm-142.jpg",
     thickness: '2cm, 3cm, 4cm'
   },
   {
     id: "sm-146",
     name: "Rain Forest Brown",
     finish: ["Polish", "Matte", "Leather"],
-    image: "/img/sm-146.png",
+    image: "/img/sm-146.jpg",
     thickness: '2cm, 3cm, 4cm'
   },
   {
     id: "sm-151",
     name: "Thunder White",
     finish: ["Polish", "Matte", "Leather"],
-    image: "/img/sm-151.png",
+    image: "/img/sm-151.jpg",
     thickness: '2cm, 3cm, 4cm'
   },
   {
     id: "sm-152",
     name: "Taj Mahal",
     finish: ["Polish", "Matte", "Leather"],
-    image: "/img/sm-152.png",
+    image: "/img/sm-152.jpg",
     thickness: '2cm, 3cm, 4cm'
   },
   {
     id: "sm-153",
     name: "Wild Rose",
     finish: ["Polish", "Matte", "Leather"],
-    image: "/img/sm-153.png",
+    image: "/img/sm-153.jpg",
     thickness: '2cm, 3cm, 4cm'
   },
 ];
