@@ -7,7 +7,7 @@ export function Footer() {
             <div className="flex flex-col items-center justify-center text-center">
                 <img src="/img/logo.png" alt="samo-enterprises" className="object-cover w-28 h-28" />
                 <p className="text-sm text-muted-foreground leading-relaxed mt-4">
-                Supplying premium natural stone to architects, designers, and homeowners since 2005.
+                Supplying premium natural stone to architects, designers, and homeowners since 2015.
                 </p>
             </div>
             <div>
