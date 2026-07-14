@@ -27,14 +27,15 @@ export function Header() {
 
     return (
         <header className="border-b border-border sticky top-0 z-40 bg-background">
-            <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div className="max-w-7xl mx-auto flex items-center justify-between">
                 {/* Logo */}
-                <Link to="/" className="flex flex-col leading-none">
-                <img src="/img/logo.png" alt="samo-enterprises" className="object-cover w-24 h-24" />
+                <Link to="/" className="flex flex-row items-center leading-none">
+                    <img src="/img/logo.png" alt="samo-enterprises" className="object-cover w-28 h-28" />
+                    <img src="/img/tagline.jpg" alt="tagline" className="h-6 -m-6 -z-10" />
                 </Link>
 
                 {/* Desktop nav */}
-                <nav className="hidden md:flex items-center gap-8">
+                <nav className="hidden lg:flex items-center gap-8">
                 {NAV_LINKS.map(({ to, label }) => {
                     const active = location.pathname === to;
                     return (
@@ -57,7 +58,7 @@ export function Header() {
                 {/* Burger button */}
                 <button
                 onClick={() => setMenuOpen(prev => !prev)}
-                className="md:hidden p-2 -mr-2 text-foreground hover:text-accent transition-colors"
+                className="lg:hidden p-4 text-foreground hover:text-accent transition-colors"
                 aria-label={menuOpen ? "Close menu" : "Open menu"}
                 >
                 {menuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -66,32 +67,35 @@ export function Header() {
 
             {/* Mobile drawer */}
             {menuOpen && (
-                <div className="md:hidden border-t border-border bg-background">
-                <nav className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-1">
-                    {NAV_LINKS.map(({ to, label }) => {
-                    const active = location.pathname === to;
-                    return (
-                        <Link
-                        key={to}
-                        to={to}
-                        className={`py-3 border-b border-border text-sm tracking-widest uppercase transition-colors duration-150 ${
-                            active ? "text-accent" : "text-foreground hover:text-accent"
-                        }`}
-                        style={{ fontFamily: "'Inter', sans-serif", letterSpacing: "0.14em" }}
-                        >
-                        {label}
-                        </Link>
-                    );
-                    })}
-                    <div className="pt-5 flex flex-col gap-2 text-xs text-muted-foreground" style={{ fontFamily: "'DM Mono', monospace" }}>
-                    <a href="mailto:contact@sampenterprises.com" className="text-xs tracking-widest uppercase text-muted-foreground" style={{ fontFamily: "'DM Mono', monospace" }}>
-                        contact@samoenterprises.com
-                    </a>
-                    <a href="tel:+91 62399 40093" className="text-xs tracking-widest uppercase text-muted-foreground" style={{ fontFamily: "'DM Mono', monospace" }}>
-                        +91 62399 40093
-                    </a>
-                    </div>
-                </nav>
+                <div className="lg:hidden border-t border-border bg-background">
+                    <nav className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-1">
+                        {NAV_LINKS.map(({ to, label }) => {
+                        const active = location.pathname === to;
+                        return (
+                            <Link
+                            key={to}
+                            to={to}
+                            className={`py-3 border-b border-border text-sm tracking-widest uppercase transition-colors duration-150 ${
+                                active ? "text-accent" : "text-foreground hover:text-accent"
+                            }`}
+                            style={{ fontFamily: "'Inter', sans-serif", letterSpacing: "0.14em" }}
+                            >
+                            {label}
+                            </Link>
+                        );
+                        })}
+                        <div className="pt-5 flex flex-col gap-2 text-xs text-muted-foreground" style={{ fontFamily: "'DM Mono', monospace" }}>
+                            <a href="mailto:contact@sampenterprises.com" className="text-xs tracking-widest uppercase text-muted-foreground" style={{ fontFamily: "'DM Mono', monospace" }}>
+                                contact@samoenterprises.com
+                            </a>
+                            <a href="tel:+91 62399 40093" className="text-xs tracking-widest uppercase text-muted-foreground" style={{ fontFamily: "'DM Mono', monospace" }}>
+                                +91 62399 40093
+                            </a>
+                            <a href="tel:+91 62399 50093" className="text-xs tracking-widest uppercase text-muted-foreground" style={{ fontFamily: "'DM Mono', monospace" }}>
+                                +91 62399 50093
+                            </a>
+                        </div>
+                    </nav>
                 </div>
             )}
         </header>

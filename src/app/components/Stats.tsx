@@ -3,7 +3,7 @@ export function Stats() {
         { label: "Years of expertise", value: "11" },
         { label: "Stone varieties", value: "78+" },
         { label: "Countries sourced", value: "14" },
-        { label: "Projects completed", value: "3,200+" },
+        { label: "Projects completed", value: "200+" },
     ];
     
     return (
