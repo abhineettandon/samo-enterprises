@@ -9,12 +9,12 @@ export function AboutPage() {
       bio: "USA since 2015",
       image: "/img/sahil.png",
     },
-    {
-      name: "Toyesh Sondhi",
-      role: "Founder & International Marketing Manager",
-      bio: "Canada since 2015",
-      image: "/img/toyesh.png",
-    },
+    // {
+    //   name: "Toyesh Sondhi",
+    //   role: "Founder & International Marketing Manager",
+    //   bio: "Canada since 2015",
+    //   image: "/img/toyesh.png",
+    // },
     {
       name: "Mohit Athia",
       role: "Founder & Operational Manager",
@@ -121,9 +121,9 @@ export function AboutPage() {
               Our team
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+          <div className="text-center md:flex gap-8">
             {team.map(person => (
-              <div key={person.name}>
+              <div key={person.name} className="mb-8 sm:mb-0">
                 <div className="overflow-hidden mb-4" style={{ height: 280 }}>
                   <img
                     src={person.image}
